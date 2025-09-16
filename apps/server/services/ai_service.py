@@ -1,6 +1,11 @@
+import logging
 import os
 from groq import Groq
 from core.config import GROQ_API_KEY
+
+
+logger = logging.getLogger(__name__)
+
 
 async def generate_call_summary(context: str = ""):
     """Generate AI summary using Groq API"""
@@ -27,7 +32,7 @@ async def generate_call_summary(context: str = ""):
         )
         
         summary = chat_completion.choices[0].message.content
-        print("Generated summary:", summary)
+        logger.info("\n" + "="*50 + f"\nGenerated summary:\n{summary}\n" + "="*50)
         return summary
         
     except Exception as e:

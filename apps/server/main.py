@@ -2,6 +2,12 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from dotenv import load_dotenv
 from api import health, auth, transfer, agent, twilio_api
+import logging
+
+logging.basicConfig(
+    level=logging.INFO,  # Show INFO and above
+    format="%(asctime)s - %(levelname)s - %(message)s",
+)
 
 load_dotenv()
 
