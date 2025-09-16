@@ -45,11 +45,7 @@ export class TTSManager {
     
     // Preferred male voices (Agent A - Daniel-like)
     const maleVoice = this.findVoice([
-      'daniel',
       'google uk english male',
-      'microsoft david',
-      'alex',
-      'male'
     ]);
     
     if (maleVoice) {
@@ -74,11 +70,7 @@ export class TTSManager {
     
     // Preferred female voices (Agent B)
     const femaleVoice = this.findVoice([
-      'samantha',
       'google uk english female',
-      'microsoft zira',
-      'victoria',
-      'female'
     ]);
     
     if (femaleVoice) {

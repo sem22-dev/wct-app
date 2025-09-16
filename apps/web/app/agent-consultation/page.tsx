@@ -187,7 +187,7 @@ function ConsultationInterface({
   };
 
   return (
-    <div className="grid grid-cols-1 xl:grid-cols-3 gap-8">
+    <div className="grid grid-cols-1 xl:grid-cols-3 gap-8 bg-white">
       {/* Status & Participants */}
       <div className="xl:col-span-1 space-y-6">
         <StatusCard
