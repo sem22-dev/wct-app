@@ -2,7 +2,7 @@
 
 Seamless voice handoffs between web customers and phone or web agents using **LiveKit**, **Twilio Voice**, and **FastAPI**.
 
-## 🌟 Features
+##  Features
 
 * **Browser-to-browser calls** with LiveKit WebRTC
 * **Warm transfers** to either:
@@ -15,7 +15,7 @@ Seamless voice handoffs between web customers and phone or web agents using **Li
 * **Call controls** (hold, mute, transfer)
 * **Cross-platform & secure** with proper auth & tokens
 
-## 🏗️ System Architecture
+##  System Architecture
 
 The system consists of three main components:
 
@@ -23,7 +23,7 @@ The system consists of three main components:
 * **server:** FastAPI REST API with modular architecture
 * **External APIs:** LiveKit for real-time audio, Twilio for phone bridging, Groq for AI summaries
 
-## 📦 Prerequisites
+##  Prerequisites
 
 * **Python 3.10+**
 * **Node.js 16+** and npm/yarn
@@ -32,7 +32,7 @@ The system consists of three main components:
 * **Groq API key** (optional)
 * **ngrok** or similar tunneling service for webhook testing
 
-## 🚀 Backend Setup
+##  Backend Setup
 
 ```bash
 git clone https://github.com/sem22-dev/wct-app.git
@@ -70,7 +70,7 @@ uvicorn main:app --reload --port 8000
 
 Backend available at: `http://localhost:8000` → Docs: `http://localhost:8000/docs`
 
-## 🎨 Frontend Setup
+##  Frontend Setup
 
 ```bash
 cd ../web
@@ -92,7 +92,7 @@ npm run dev   # or yarn dev
 
 Frontend at: `http://localhost:3000`
 
-## 📱 Usage Instructions
+##  Usage Instructions
 
 ### Start Roles
 
@@ -103,7 +103,7 @@ Both join the same support room to begin.
 
 ---
 
-### 🔀 Transfer Options
+###  Transfer Options
 
 #### Transfer to Phone (Twilio)
 
@@ -125,7 +125,7 @@ Both join the same support room to begin.
 
 ---
 
-## 🔧 Configuration Details
+##  Configuration Details
 
 ### Twilio Setup
 
@@ -151,7 +151,7 @@ Use ngrok HTTPS URL in Twilio TwiML App config.
 
 ---
 
-## 🐛 Troubleshooting
+##  Troubleshooting
 
 * **Twilio WebSocket Errors (1005/1006):** Check TwiML App URL, ngrok running, and correct API Key/Secret.
 * **Application Error:** Webhook not returning valid TwiML → check FastAPI logs.
@@ -167,7 +167,7 @@ curl -X POST "http://localhost:8000/twilio/voice-webhook" -d "To=test&From=test"
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 wct-app/
@@ -193,7 +193,7 @@ wct-app/
 
 ---
 
-## 🔄 API Endpoints
+##  API Endpoints
 
 **Core**
 
